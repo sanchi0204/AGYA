@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SendMsg"
+    android:focusable="true"
+    android:contentDescription="@string/send_msg"
+    android:padding="16dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:id="@+id/msg_num"
+        android:hint="@string/enter_phone"
+        android:inputType="textLongMessage"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:id="@+id/msg_text"
+        android:hint="@string/enter_msg"
+        android:inputType="textLongMessage"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:text="@string/send_message"
+        android:id="@+id/btn_send_msg"/>
+</LinearLayout>

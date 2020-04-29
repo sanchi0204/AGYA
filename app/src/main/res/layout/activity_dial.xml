@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dial"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone"
+        android:textAllCaps="true"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/phone_number"
+        android:layout_centerInParent="true"
+        android:inputType="phone"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dial"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:id="@+id/dial_btn"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/phone_number"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BlindApp</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="mic_speak">Mic Speak to navigate app</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="contacts">Contacts</string>
+    <string name="messages">Messages</string>
+    <string name="battery">Battery</string>
+    <string name="dial">Dail Number</string>
+    <string name="send_message">Send Message</string>
+    <string name="contact_list">Contact List</string>
+    <string name="display_contacts">Display Contacts</string>
+    <string name="battery_cent">Battery Percentage</string>
+    <string name="dial_a_number">Dial A Number</string>
+    <string name="enter_phone">Enter Phone Number</string>
+    <string name="send_msg">Send Message</string>
+    <string name="choose_contact_action">Choose Action to be performed</string>
+    <string name="call_contact">Call Contact</string>
+    <string name="msg_contact">Message Contact</string>
+    <string name="enter_msg">Enter your message</string>
+    <string name="detect">DETECT</string>
+<!--    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">TFL Detect</string>-->
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+</resources>
