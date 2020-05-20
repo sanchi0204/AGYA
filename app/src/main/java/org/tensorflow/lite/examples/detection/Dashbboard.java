@@ -14,7 +14,7 @@ import java.util.Locale;
 public class Dashbboard extends AppCompatActivity {
 
     private TextToSpeech mTTS;
-    TextView battery,contacts,messages,dial;
+    TextView battery,contacts,messages,dial,surroundings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class Dashbboard extends AppCompatActivity {
         contacts=findViewById(R.id.contacts);
         dial=findViewById(R.id.dial_number);
         messages=findViewById(R.id.message);
+        surroundings=findViewById(R.id.surroundings);
 
         battery.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,18 +68,25 @@ public class Dashbboard extends AppCompatActivity {
             }
         });
 
-        messages.setOnClickListener(new View.OnClickListener() {
+        surroundings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(Dashbboard.this,DetectorActivity.class);
                 startActivity(i);
             }
         });
+//
+//        messages.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //TODO
+//            }
+//        });
     }
 
     private void speak() {
-        String text="Welcome User! This is the Dashboard.You can use it to select contacts and call or message them; to call or message an unknown contact " +
-                "Check received messages and know about your phone battery condition as well.";
+        String text="Welcome User! This is the Dashboard.You can use it to select contacts, make calls, send or receive messages and " +
+                "check your battery condition";
 
         mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }

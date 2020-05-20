@@ -59,5 +59,18 @@
         android:layout_below="@+id/message"
         android:padding="10dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/surroundings"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/surroundings"
+        android:contentDescription="@string/battery"
+        android:layout_below="@+id/battery_msg"
+        android:padding="10dp"/>
+
 
 </RelativeLayout>
